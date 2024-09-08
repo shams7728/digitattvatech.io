@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitattva Solution</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="/img/Frame 3.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/easy.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> -->
+     <script  src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"> </script>
+     
+
+
+
+</head>
+
+
+<body>
+
+   <div id="preloader"></div>
+    <div class="site-wrapper">
+        <div class="header-index">
+            <header>
+                <nav class="container navbar">
+                    <div class="container-nav flex">
+                         <a href="/" class="navbar-logo">
+                            <img src="/img/logofinal11.svg" height="60px" , width="160px">
+                            <!-- <img src="images/logo.png"> -->
+                         </a>
+                         <button  onclick="openNav()" class="navbar-toggler" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+                        <ul class="navbar-nav flex"> 
+                            <li><a href="#home1" class="nav-link active">Home</a></li>
+                            <li><a href="#about2" class="nav-link">About</a></li>
+                            <li><a href="/career.html" class="nav-link">Career</a></li>
+
+                            <li><a href="#contact3" class="nav-link">Contact</a></li>
+                            <li class="dropdown"><a href="/" class="nav-link dropdown-toggle">Pages</a>
+                            <ul class="dropdown-menu">
+                             <li><a href="#service4" class="dropdown-item">Services</a><li>
+                             <li><a href="#pricing2" class="dropdown-item">Pricing Plan</a><li>
+                             <!-- <li><a href="#portfolio3" class="dropdown-item">Portfolio</a><li> -->
+                             <li><a href="#team4" class="dropdown-item">Team</a><li>
+                             <li><a href="/" class="dropdown-item">Testimonials</a><li>
+                             <li><a href="#faq5" class="dropdown-item">FAQ</a><li>
+                             <li><a href="#blog6" class="dropdown-item">Blog</a><li>
+                             <li><a href="/" class="dropdown-item">Coming Soon</a><li>
+                             <li><a href="/" class="dropdown-item">404</a><li>
+                            </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="nav-right flex">
+                        <p>Call Us:<span>+91 9421819663</span></p>
+                        <i onclick="open_search()" class="fa-solid fa-magnifying-glass"></i>
+                        <i onclick="close()" class="fa-solid fa-bars"></i>
+                    </div>
+
+                </nav>
+                <aside id="mySidepanel" class="sidepanel">
+                    <div class="sidebar flex">
+                        <a href=""><img src="/img/logofinal11.svg" alt="logo"></a>
+                            <button  onclick="closeNav()" type=" button"  class=" closebtn btn_hover1">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="/index.html" onclick="closeNav()" class="nav-link active"> Home</a></li>
+                            <li ><a href="#about2" onclick="closeNav()" class="nav-link active"> About</a></li>
+                            <li><a href="#contact3" onclick="closeNav()" class="nav-link active"> Contact</a></li>
+                            <li><a href="/career.html" onclick="closeNav()" class="nav-link active"> Career</a></li>
+                            <li  class="pages"><a href="/"> More</a></li>
+                            <li class="collapse-btn">
+                                <a href="" class="nav-link plus_collapse "   data-bs-toggle="collapse"><i class="fa-solid fa-plus"></i> </a>
+                                <div class="collapse show" id="pages">
+                                    <ul>
+                                            <li><a href="#service4" onclick="closeNav()"  lass="nav-link">Services</a></li>
+                                            <li><a href="#pricing2" onclick="closeNav()"  class="nav-link">Pricing Plan</a><li>
+                                            <li><a href="#portfolio3" onclick="closeNav()" class="nav-link">Portfolio</a><li>
+                                            <li><a href="#team4" onclick="closeNav()"  class="nav-link">Team</a><li>
+                                            <li><a href="/" onclick="closeNav()"  class="nav-link">Testimonials</a><li>
+                                            <li><a href="#faq5" onclick="closeNav()"  class="nav-link">FAQ</a><li>
+                                            <li><a href="blog6" onclick="closeNav()"  class="nav-link">Blog</a><li>
+                                            <li><a href="/" onclick="closeNav()"  class="nav-link">Coming Soon</a><li>
+                                            <li><a href="/" onclick="closeNav()"  class="nav-link">404</a><li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div id="search-bar">
+                    <div class="btn_hover1">
+                    <i onclick="close_search()" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <form action="#" method="search">
+          <input type="search" name="search"  required placeholder="Search...">
+          <button type="submit" class="btn_hover1">Search</button>
+                    </form>
+                </div>
+                <!-- <section class="header-right-sidebar"  id="right_side">
+                    <div class="flex flex-sb">
+                        <a href="/" >
+                            <img src="images/right-side-logo.png" alt="logo">
+                        </a>
+                        <button  onclick="closeNav()" type=" button" class="close_rightsidebar fa-solid fa-xmark" >
+
+                        </button>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe in reprehenderit mollitia aperiam ea? Laudantium, dolor temporibus amet corporis inventore aut, error quibusdam architecto fuga modi asperiores soluta illum autem!</p>
+
+                <a href="" class="btn_hover1">Discover More</a>
+                <hr>
+                <h4>Connected details</h4>
+                <ul class="flex">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#" class="text-lowercase">shamsmansoori567@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#" class="text-lowercase">+91454554545</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-clock"></i></a>
+                        <a href="#" class="text-lowercase">office Hours :8AM-11PM sunday - weekend day</a>
+                    </li>
+                </ul>
+                <span class="flex">
+             <a href="#"><i class="fa-solid fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+             <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </span>
+                </section>  -->
+            </header>
+        </div>
+            <section class="hero  " >
+
+                <div class="container2" data-aos="zoom-in">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+               
+                    
+                    
+                    <!-- <div class="hero-social-icon flex">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <hr>
+                    </div> -->
+
+                    <!-- <div class="content">
+                        <h2>We Provide a  <span></span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellendus ut sed molestiae suscipit minus!</p>
+                        <a href="#">Learn More</a>
+                    </div> -->
+                    <!-- <div class="center-data flex flex-col gap-1 content ">
+                        <h2>We Provide a  <span></span></h2>
+                        <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
+                        <div class="center-btn flex gap-15 mt-1 ">
+                            <a href="#contact3"  class="btn_hover1">Get Started</a>
+                            <a href="/" class="btn_hover2">Discover More</a>
+                        </div>
+                    </div> -->
+
+
+                    <div class="center-data flex flex-col gap-1 ">
+                        <h1>DIGITATTVA SOLUTION</h1>
+                        <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
+                        <div class="center-btn flex gap-15 mt-1 ">
+                            <a href="#contact3"  class="btn_hover1">Get Started</a>
+                            <a href="/" class="btn_hover2">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              
+        <section class="feature">
+            <div class="container">
+                <div class="flex">
+                    <div id="head1" class="header-card" data-aos="fade-up">
+                         <div>
+                            <figure>
+                                <img  class="figure_img1" src="images/icon/feature1.png" alt="img ">
+                            </figure>
+                            <h4>
+                                CUSTOMIZED SOLUTION
+                            </h4>
+                            <p>At Digitattva Solutions, we specialize in crafting bespoke digital marketing strategies tailored specifically to your company’s unique needs. Our innovative solutions are designed to drive results and elevate your brand's presence online. Partner with us to unlock customized strategies that align with your goals and set you apart from the competition.
+                            </p>
+                         </div>
+                    </div>
+                    <div class="header-card   data-aos="fade-down" >
+                         <div>
+                            <figure>
+                                <img src="images/icon/feature2.png" alt="img ">
+                            </figure>
+                            <h4>
+                                ROI-DRIVEN APPROCH
+                            </h4>
+                            <p>Our ROI-driven approach ensures every strategy we design is focused on maximizing your return on investment. By leveraging data-driven insights and performance metrics, we fine-tune our tactics to deliver measurable results and optimize your marketing spend. Trust us to align your digital marketing efforts with your business goals for sustained growth and profitability.</p>
+                         </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-up" >
+                         <div>
+                            <figure>
+                                <img src="images/icon/feature3.png" alt="img ">
+                            </figure>
+                            <h4>
+                                CREATIVE SOLUTION
+                            </h4>
+                            <p> Offer AI-driven personalization in web and app development, immersive and accessible UI/UX designs, data-driven digital marketing with interactive content, and innovative social media strategies like influencer partnerships, AR filters, and shoppable posts.
+                                AR filters, shoppable posts, and viral challenges, and provide content writing with engaging storytelling, SEO-friendly blogs, 
+                            </p>
+                         </div>
+                    </div>
+                    <div class="header-card" data-aos="fade-down" >
+                         <div>
+                            <figure>
+                                <img src="images/icon/feature4.png" alt="img ">
+                            </figure>
+                            <h4>
+                                EXPERT TEAM
+                            </h4>
+                            <p> Our dynamic team of web developers, savvy marketers, and other bright young professionals brings a fresh perspective and cutting-edge skills to every project. We combine our diverse expertise to deliver innovative solutions that drive your business forward and achieve outstanding results</p>
+                         </div>
+                    </div>
+                     
+                </div>
+            </div>
+        </section>
+
+        <section class="logoipsum">
+            <div class="container">
+                <div class="flex flex-col gap-2">
+                    <hr class="hr1">
+                    <h3 class="mb-15" data-aos="zoom-in"> OUR CLIENTS</h3>
+                </div>
+                <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+                    <figure><img src="images/slider/client1.jpg" alt="logoipsum"></figure>
+                    <figure><img src="images/slider/mp1[1].jpg" alt="logoipsum"></figure>
+                    <!-- <figure><img src="images/home/logoipsum3.svg" alt="logoipsum"></figure>
+                    <figure><img src="images/home/logoipsum4.svg" alt="logoipsum"></figure> -->
+                    <!-- <figure><img src="images/home/logoipsum5.svg" alt="logoipsum"></figure> -->
+                    <!-- <figure><img src="images/home/logoipsum6.svg" alt="logoipsum"></figure> -->
+
+                </div>
+                <hr class="hr2">
+
+
+            </div>
+        </section>
+        <section class="about" id="about2" >
+            <div class="container">
+                <div class="about-data flex-sb ">
+                    <div class="w-50" data-aos="fade-up">
+                        <div class="flex about-title gap-1">
+                            <hr>
+                            <h5>ABOUT US</h5>
+                        </div>
+                        <h2>
+                            DIGITAL SERVICES BUILDING YOUR EMPIRE DIGITALLY
+                        </h2>
+                        <p >At Digitattva Solutions, we’re more than just a digital marketing and web development agency—we’re a team of passionate, young creatives who believe in the power of connection. We understand that behind every business is a vision, a story, and a dream. Our mission is to bring that vision to life, helping you connect with your audience in a meaningful way through innovative strategies and beautifully crafted websites.
+
+
+
+                            <br>
+                            <br>
+
+                            <p>
+
+                                We’re driven by the excitement of seeing our clients grow and succeed. Every project we take on is personal to us, because we know that the success of your business means everything to you. With fresh ideas and a heart for creativity, we strive to not only meet your goals but also to exceed your expectations.
+
+
+                        
+                        </p>
+                        <br>
+                            <p>At Digitattva Solutions, we’re here to build lasting relationships, not just complete projects. Let’s work together to bring your brand to life, create something truly memorable, and take your business to new heights. Your success is our inspiration.</p>
+                            
+                        <!-- <div class="flex gap-1 mt-15">
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                        </div>
+                        <div class="flex gap-1 mt-15" >
+                            <i class="fa-solid fa-check"></i>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                        </div> -->
+                        <div class="flex mt-3 gap-20">
+                            <a href="#contact3" class="btn_hover1">Get Started</a>
+                            <a href="#" class="btn_hover2">Discover More</a>
+                        </div>
+                    </div>
+                    <div class="w-50 about-imgs flex flex-center" data-aos="fade-down">
+                        <div>
+                            <figure>
+                                <img src="images/hero/girlwork.jpg " alt="img">
+                            </figure>
+                        </div>
+                        <div class="ab-count flex flex-center">
+                            <div class="flex">
+                                <h2 >
+                                    2
+                                </h2>
+                                <h2>
+                                    +
+                                </h2>
+                            </div>
+                            <p >years of experience</p>
+                        </div>
+                        <div class="about-hr flex gap-1">
+                            <hr>
+                            <h6>Who we are </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="portfolio" id="portfolio3">
+                <div class="portfolio-1"  >
+                    <div class="container">
+                        <div class="porto-center" data-aos="fade-up">
+                            <div class="w-50">
+                                <div class="flex gap-1" >
+                                    <hr class="gallary-hr1">
+                                    <h5>PORTFOLIO</h5>
+                                </div>
+                                <h2 class="mt-15">Our Latest Projects</h2>
+                                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laudantium delectus saepe </p>
+                            </div>
+                            <div class="flex w-100 flex-end">
+                                <a href="/" class="btn_hover2">
+                                    View All Projects
+                                </a>
+                            </div>
+                            <hr class="mt-3"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="gallary" >
+                <div class="ga-bg"> </div>
+                <span></span>
+                <div class="container" data-aos="fade-up">
+                     <div class="tab mt-15" >
+                        <button class="tablinks active" onclick="open_img(event, 'all')"> ALL</button>
+                        <button class="tablinks"onclick="open_img(event, 'design')"> DESIGN</button>
+                        <button class="tablinks"onclick="open_img(event, 'development')"> DEVELOPMENT</button>
+                        <button class="tablinks"onclick="open_img(event, 'branding')"> BRANDING</button>
+                        <button class="tablinks"onclick="open_img(event, 'ui_ux')"> UI/UX</button>
+                        <button class="tablinks"onclick="open_img(event, 'marketing')"> MARKETING</button>
+                        <button class="tablinks"onclick="open_img(event, 'seo')"> SEO</button>
+                     </div>
+                     <div id="all" class="tabcontent " style="display: block;">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-3.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-6.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-7.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-1.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-2.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-4.png" alt="sm_img"></figure>
+                                    <figure><img src="images/home/all-gallary-7.png" alt="sm_img"></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-5.png" alt=""></figure>
+                                    
+                                 </div>
+
+                                
+                                 <div class="w-66">
+                                    <figure> <img src="images/home/all-gallary-8.png" alt=""></figure>
+                                 </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="design" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/design-gallary-6.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/design-gallary-3.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/design-gallary-7.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/design-gallary-1.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/design-gallary-2.png" alt=""></figure>
+                                 </div>
+                                 <!-- <div class="w-33">
+                                    <figure><img src="images/home/all-gallary-4.png" alt="sm_img"></figure>
+                                    <figure><img src="images/home/all-gallary-7.png" alt="sm_img"></figure>
+                                 </div> -->
+                                
+                                 <!-- <div class="w-33">
+                                    <figure> <img src="images/home/design-gallary-4.png" alt=""></figure>
+                                 </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="development" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/dev-gallary-3.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/dev-gallary-4.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/dev-gallary-5.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/dev-gallary-6.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/dev-gallary-8.png" alt=""></figure>
+                                 </div>
+                                
+                                 <div class="w-33">
+                                    <figure> <img src="images/home/dev-gallary-7.png alt=""></figure>
+                                 </div>
+                            </div>
+                        </div>
+                     </div>
+                     <div id="branding" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/brand-gallary-6.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-66">
+                                    <figure><img src="images/home/brand-gallary-8.png"  alt=""></figure>
+                                 </div>
+                               
+                               
+                            </div>
+                        </div>
+                     </div>
+                     <div id="ui_ux" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/ui-ux-gallary-3.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-66">
+                                    <figure><img src="images/home/ui-ux-gallary-4.png" alt=""></figure>
+                                 </div>
+                               
+                            </div>
+                        </div>
+                     </div>
+                     <div id="marketing" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/market-gallary-1.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/market-gallary-2.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/market-gallary-3.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/market-gallary-4.png" alt=""></figure>
+                                 </div>
+                               
+                             
+                            </div>
+                        </div>
+                     </div>
+                     <div id="seo" class="tabcontent">
+                        <div class="flex flex-center">
+                            <div class="flex w-100">
+                                 <div class="w-33">
+                                    <figure><img src="images/home/seo-gallary-4.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/seo-gallary-5.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/seo-gallary-6.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-66">
+                                    <figure><img src="images/home/seo-gallary-7.png" alt=""></figure>
+                                 </div>
+                                 <div class="w-33">
+                                    <figure><img src="images/home/seo-gallary-8.png" alt=""></figure>
+                                 </div>
+                                 
+            
+                            </div>
+                        </div>
+                     </div>
+                     <div class="gallary-hr flex flex-end gap-1 mt-15">
+                        <h6>Creative Solution</h6>
+                        <hr>
+
+                     </div>
+                  </div>
+                </div>
+        </section>  -->
+
+        <!-- <section class="service" id="service1">
+            <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="gap-1">
+                                <div class="service_hr1">
+                                    <h5>SERVICES</h5>
+                                </div>
+
+                                <div class="service-22">
+                                    <h2 class="mt-15">services we offer</h2>
+                                    <p class="mt-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias facilis beatae quasi omnis optio perspiciatis, minus corrupti similique natus earum, possimus fuga sequi facere repudiandae laboriosam nemo at voluptatem obcaecati!</p></div>
+
+                            </div>
+                        </div>
+                        <div class="w-33 mt-15 flex flex-end">
+                            <a href="/" class="btn_hover2">View All Services</a>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="flex s-card gap-1 ">
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/slider2.png" alt="slider1"></figure>
+                                <h3>DEVELOPMENT</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora. Molestias natus necessitatibus saepe sint iusto neque ut excepturi. Doloremque, cumque autem. Vel sit modi recusandae facere error eligendi hic?</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                        </div>
+                        <div class="service-card" data-aos="fade-up">
+                            <figure>
+                                <img src="images/icon/slider1.png" alt="slider2"></figure>
+                                <h3>UI/UX</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora. Molestias natus necessitatibus saepe sint iusto neque ut excepturi. Doloremque, cumque autem. Vel sit modi recusandae facere error eligendi hic?</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/slider3.png" alt="slider3"></figure>
+                                <h3>MARKETING</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora. Molestias natus necessitatibus saepe sint iusto neque ut excepturi. Doloremque, cumque autem. Vel sit modi recusandae facere error eligendi hic?</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/slider3.png" alt="slider3"></figure>
+                                <h3>MARKETING</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora. Molestias natus necessitatibus saepe sint iusto neque ut excepturi. Doloremque, cumque autem. Vel sit modi recusandae facere error eligendi hic?</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/slider3.png" alt="slider3"></figure>
+                                <h3>MARKETING</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora. Molestias natus necessitatibus saepe sint iusto neque ut excepturi. Doloremque, cumque autem. Vel sit modi recusandae facere error eligendi hic?</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/slider3.png" alt="slider3"></figure>
+                                <h3>MARKETING</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora. Molestias natus necessitatibus saepe sint iusto neque ut excepturi. Doloremque, cumque autem. Vel sit modi recusandae facere error eligendi hic?</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+
+        <!-- <div class="container">
+            <h2>Our Services</h2> -->
+
+            <!-- <section class="popup center ">
+      
+
+                <div class="cut" >
+                  <a href="/career.html" onclick="closeNav()"  class="fa-solid fa-xmark " style=" color: rgb(0, 0, 0); " > </a>
+                  
+                </div>
+                <div class="title">Application Form</div>
+                  <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil provident voluptatem nulla placeat.</div>
+                   <div class="containers">
+                    <form action="https://api.web3forms.com/submit" method="post" id="contact3"  data-aos="zoom-in" data-aos-delay="400">
+                      <div id="footer-message"></div>
+                     <div class="glasscontain">
+                       <ul>
+              <li><input type="hidden" name="access_key" value="b4043afe-9563-4dea-ab77-f8324ba203fb"></li>
+                      <li><input type="text"  name="name" required placeholder="Enter Your Name"></li>
+                      <li><input type="email"  name="email" required placeholder="Enter Your Mail" ></li>
+                      <li><input type="number" name="Contact no" required placeholder="Enter Contact Number"></li>
+                   <li><input type="text" name="Job Role" required placeholder=" Which Job Role You Are Applying ?"></li>
+                      
+                   <div class="dismiss-btn">
+                    <button id="dismiss-popup-btn">Submit</button>
+          
+                  </div>
+                  </ul>
+              
+                  </form>
+          
+                   </div>
+        
+              </section> -->
+
+              <!-- <section class="popup center">
+                <div class="icon">
+                    <i class="fa fa-check"></i>
+                </div>
+        
+                <div class="title">Check Email</div>
+                    <div class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil provident voluptatem nulla placeat.</div>
+                <div class="dismiss-btn">
+                    <button id="dismiss-popup-btn">Confirm</button>
+                </div>
+            </section> -->
+            <!-- <section class="center">
+                <button id="open-popup-btn">Subscribe</button>
+            </section> -->
+
+       
+          
+
+           <section id="service4" class=" servicecontain " >
+
+            <div class="dialog-box" id="dialog-1">
+                <div class="dialog-content">
+                    <span class="close" onclick="closeDialog(1)">&times;</span>
+                    <h2>Web Development</h2>
+                    <p>At digitattva solutions, we offer comprehensive web development services that cater to all your digital needs. Our expert team uses the latest technologies to create responsive, fast-loading, and SEO-optimized websites that provide an exceptional user experience. From custom design and scalable solutions to robust security and ongoing maintenance, we ensure your website not only looks great but also performs at its best. Whether it's a simple site or a complex e-commerce platform, we deliver tailor-made solutions that drive results and elevate your online presence. Let’s build your digital future together!</p>
+                    <div class="center-btn servicebtn " onclick="closeDialog(1)">
+                        <a href="#contact3"  class="btn_hover2 ">Get Started</a>
+                       
+                    </div>
+                    
+                </div>
+              
+            </div>
+        
+            <div class="dialog-box" id="dialog-2">
+                <div class="dialog-content">
+                    <span class="close" onclick="closeDialog(2)">&times;</span>
+                    <h2>UI/UX </h2>
+                    <p>We craft intuitive and visually stunning UI/UX designs that prioritize user experience and engagement. Our design process includes thorough user research, wireframing, and prototyping, ensuring every element is both functional and beautiful. We use tools like Figma, Adobe XD, and Sketch to bring your vision to life, creating interfaces that are not only aesthetically pleasing but also easy to navigate. Whether it's web or mobile, we design with the user in mind, ensuring a seamless and enjoyable experience across all devices.</p>
+                    <div class="center-btn servicebtn">
+                        <a href="#contact3"  class="btn_hover2">Get Started</a>
+                       
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dialog-box" id="dialog-3">
+                <div class="dialog-content">
+                    <span class="close" onclick="closeDialog(3)">&times;</span>
+                    <h2>SOCIAL MEDIA MARKETING</h2>
+                    <p>We specialize in social media marketing and management, crafting compelling content that resonates with your audience across platforms like Facebook, Instagram, and LinkedIn. Our strategies include targeted campaigns, consistent brand messaging, and community engagement to boost your online presence. From content creation to analytics, we ensure your social media channels drive growth and connect with your audience effectively.</p>
+                    <div class="center-btn servicebtn">
+                        <a href="#contact3"  class="btn_hover2">Get Started</a>
+                       
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dialog-box" id="dialog-4">
+                <div class="dialog-content">
+                    <span class="close" onclick="closeDialog(4)">&times;</span>
+                    <h2>SEO/SEM</h2>
+                    <p>Our comprehensive SEO and SEM services elevate your online presence and drive targeted traffic to your website. Our SEO services include keyword research, on-page optimization of meta tags, content, and technical improvements like site speed and mobile-friendliness. We also create high-quality content, build authoritative backlinks, and optimize for local search results.
+
+                        In SEM, we manage PPC campaigns on platforms like Google Ads, develop targeted ad groups, and craft compelling ad copy. Our strategy includes performance tracking, A/B testing, and remarketing to re-engage visitors, ensuring ongoing adjustments and data-driven insights for maximum ROI and competitiveness.</p>
+                    <div class="center-btn servicebtn">
+                        <a href="#contact3"  class="btn_hover2">Get Started</a>
+                       
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dialog-box" id="dialog-5">
+                <div class="dialog-content">
+                    <span class="close" onclick="closeDialog(5)">&times;</span>
+                    <h2>Branding</h2>
+                    <p>
+                        We offer comprehensive branding services to make your business stand out, including unique logo design, compelling brand messaging, and visual identity creation. Our expertise extends to developing strategic brand plans, creating brand guidelines for consistency, and providing rebranding services to refresh your image. We also design engaging packaging and produce both print and digital collateral, ensuring your brand is consistently represented across all platforms. Additionally, we conduct market research to ensure your brand resonates with your target audience and stays ahead of industry trends. Our goal is to build a strong, cohesive brand that effectively connects with your audience and differentiates you in the market.
+                    </p>
+                    <div class="center-btn servicebtn">
+                        <a href="#contact3"  class="btn_hover2">Get Started</a>
+                       
+                    </div>
+                </div>
+            </div>
+        
+            <div class="dialog-box" id="dialog-6">
+                <div class="dialog-content">
+                    <span class="close" onclick="closeDialog(6)">&times;</span>
+                    <h2>PPC advertising </h2>
+                    <p>We provide comprehensive PPC advertising services designed to maximize your online visibility and ROI. Our offerings include meticulous campaign creation and management, strategic keyword research to identify high-performing terms, and ad optimization across major platforms such as Google Ads and social media. We ensure your ads reach the right audience by setting up targeted ad groups and crafting compelling ad copy. Our services also include A/B testing to refine ad performance and detailed performance analysis to monitor key metrics, make data-driven adjustments, and ensure your ads drive targeted traffic and achieve your marketing goals effectively.</p>
+                    <div class="center-btn servicebtn">
+                        <a href="#contact3"  class="btn_hover2">Get Started</a>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+ 
+            <div class="service_hr1">
+                 <h2 class="head">Our Services</h2>
+                </div>
+   
+                <hr>
+                    
+                    <div class=" box-contain ">
+                        <div class="service-card" data-aos="fade-down">
+                            <!-- <div id="dialogBox" class="dialog">
+                                <div class="dialog-content">
+                                    <span class="close-button" id="closeDialog">&times;</span>
+                                    <h2>Web Development</h2>
+                                    <p>Boost your online presence with our custom web development solutions. We create responsive, user-friendly websites tailored to your business needs, ensuring a standout digital experience.</p>
+                                    <button id="confirmButton">Confirm</button>
+                                </div>
+                            </div>  -->
+                            
+                            <figure>
+                                <img src="images/icon/web-design.png" alt="slider3"></figure>
+                                <h3>WEB DEVELOPMENT</h3>
+                                <p>Boost your online presence with our custom web development solutions. We create responsive, user-friendly websites tailored to your business needs, ensuring a standout digital experience.</p>
+                                <a href="#service3 " onclick="openDialog(1)" >Read More <i class="fa-solid fa-arrow-right" ></i></a>
+                                <!-- <button id="openDialog">Open Dialog</button> -->
+                               
+                        </div>  
+                        <div class="service-card" data-aos="fade-down">
+                            
+                            <figure>
+                                <img src="images/icon/design.png" alt="slider3"></figure>
+                                <h3>UI/UX</h3>
+                                <p>Create stunning, user-friendly interfaces with our expert UI/UX design. We deliver engaging, intuitive designs that enhance user experiences and drive conversions. Let us turn your vision into a visually compelling and functional reality.</p>
+                                <a href="#service3 " onclick="openDialog(2)">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                
+                        </div>
+                        <div class="service-card" i data-aos="fade-down">
+                        <figure>
+                                <img src="images/icon/bullhorn.png"  alt="slider3"></figure>
+                                <h3 id="ser3">SOCIAL MEDIA MARKETING</h3>
+                                <p>
+                                    Boost your brand with our expert social media and influencer marketing services! We create engaging content, connect you with top influencers, and craft strategies to grow followers and boost engagement. Let’s make your brand go viral! 🚀</p>
+                                <a  href="#service3 "  onclick="openDialog(3)">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/search-engine.png" alt="slider3"></figure>
+                                <h3>SEO & SEM</h3>
+                                <p> 
+                                    At Digitattva solution, we boost your brand's online presence with expert SEO and SEM strategies. From improving search rankings to targeted ads, we help drive traffic and increase your ROI. Let us make your business stand out in the digital world.</p>
+                                <a href="#service3 "  onclick="openDialog(4)">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/branding.png" alt="slider3"></figure>
+                                <h3>BRANDING</h3>
+                                <p>Elevate your brand with our expert services! From logo design to brand strategy, we craft identities that captivate and set you apart. Let’s create a memorable brand that drives growth and resonates with your audience.
+
+                                </p>
+                                <a  href="#service3 " onclick="openDialog(5)">Read More <i class="fa-solid fa-arrow-right"></i></a>
+
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/ads.png" alt="slider3"></figure>
+                                <h3>PPC advertising</h3>
+                                <p>We provide comprehensive PPC advertising services to maximize your online visibility and ROI. Our offerings include campaign creation, keyword research, and ad optimization across platforms like Google Ads and social media. We also conduct A/B testing and performance analysis to ensure your ads are effective and drive targeted traffic
+
+                                </p>
+                                <a  href="#service3 "   onclick="openDialog(6)">Read More <i class="fa-solid fa-arrow-right"></i></a>
+
+                        </div>
+                        <!-- <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/branding.png" alt="slider3"></figure>
+                                <h3>BRANDING</h3>
+                                <p>Elevate your brand with our expert services! From logo design to brand strategy, we craft identities that captivate and set you apart. Let’s create a memorable brand that drives growth and resonates with your audience.
+
+                                </p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+
+                        </div> -->
+                        <!-- <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/branding.png" alt="slider3"></figure>
+                                <h3>BRANDING</h3>
+                                <p>Elevate your brand with our expert services! From logo design to brand strategy, we craft identities that captivate and set you apart. Let’s create a memorable brand that drives growth and resonates with your audience.
+
+                                </p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+
+                        </div> -->
+                
+                  </div>
+
+                  <div id="open-popup-btn" class="jobs"></div>
+              
+            </section>  
+         <!-- <section class=" service" id="service4">
+                <div class="service-1">
+                <div class="container">
+                    <div class="service-data" data-aos="fade-down">
+                        <div class="w-66">
+                            <div class="gap-1">
+                                <div class="service_hr1">
+                                    <h5>SERVICES</h5>
+                                </div>
+
+                                <div class="service-22">
+                                    <h2 class="mt-15">services we offer</h2>
+                                    <p class="mt-15">Discover how our tailored digital solutions can transform your brand and drive success—check out our services to see how we can elevate your business.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="w-33 mt-15 flex flex-end">
+                            <a href="/" class="btn_hover2">View All Services</a>
+                        </div>
+                        <hr>
+                    </div> 
+                    <h2>Our Services</h2>
+                    <div class=" service-slider flex s-card gap-1 ">
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/web-design.png" alt="slider3"></figure>
+                                <h3>WEB DEVELOPMENT</h3>
+                                <p>Boost your online presence with our custom web development solutions. We create responsive, user-friendly websites tailored to your business needs, ensuring a standout digital experience.</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>  
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/design.png" alt="slider3"></figure>
+                                <h3>UI/UX</h3>
+                                <p>Create stunning, user-friendly interfaces with our expert UI/UX design. We deliver engaging, intuitive designs that enhance user experiences and drive conversions. Let us turn your vision into a visually compelling and functional reality.</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" i data-aos="fade-down">
+                        <figure>
+                                <img src="images/icon/bullhorn.png"  alt="slider3"></figure>
+                                <h3 id="ser3">SOCIAL MEDIA MARKETING</h3>
+                                <p>
+                                    Boost your brand with our expert social media and influencer marketing services! We create engaging content, connect you with top influencers, and craft strategies to grow followers and boost engagement. Let’s make your brand go viral! 🚀</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/search-engine.png" alt="slider3"></figure>
+                                <h3>SEO & SEM</h3>
+                                <p> 
+                                    At Digitattva solution, we boost your brand's online presence with expert SEO and SEM strategies. From improving search rankings to targeted ads, we help drive traffic and increase your ROI. Let us make your business stand out in the digital world.</p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <div class="service-card" data-aos="fade-down">
+                            <figure>
+                                <img src="images/icon/branding.png" alt="slider3"></figure>
+                                <h3>BRANDING</h3>
+                                <p>Elevate your brand with our expert services! From logo design to brand strategy, we craft identities that captivate and set you apart. Let’s create a memorable brand that drives growth and resonates with your audience.
+
+                                </p>
+                                <a href="/ ">Read More <i class="fa-solid fa-arrow-right"></i></a>
+
+                        </div>
+                
+                  </div>
+               </div>
+            </div>
+            </section>  -->
+            
+            <!-- 2nd -->
+           
+
+            <!-- <div class="contain">
+                <h2>Our Services</h2>
+                <section class="servicess">
+                    <div class="card">
+                        <div class="content">
+                            <div class="icon"><i class="fa fa-code"></i></div>
+                            <div class="title">Web Development</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="icon"><i class="fa fa-mobile"></i></div>
+                            <div class="title">App Development</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                            <div class="title">Web Design </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="icon"><i class="fa fa-laptop"></i></div>
+                            <div class="title">Responsive Design </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="icon"><i class="fa fa-line-chart"></i></div>
+                            <div class="title">Advertising </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="icon"><i class="fa fa-wordpress"></i></div>
+                            <div class="title">Wordpress</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                        </div>
+                    </div>
+                </section>
+            </div> -->
+
+
+        <section class="experience">
+            <div class="container">
+                <div class="flex flex-wrap exp-center" data-aos="fade-up ">
+                    <div class="w-50">
+                        <div class="flex gap-1">
+                            <hr class="exp-hr1 m-0" >
+                            <h5>
+                                Experience
+                            </h5>
+                        </div>
+                        <h2>Why choose us?</h2>
+                        <p class="exp-p">
+                            Choose us for our blend of industry expertise, innovative solutions, and a client-focused approach. We offer customized digital strategies backed by proven results and a commitment to excellence. Our dedicated team ensures that each project receives the personalized attention it deserves, driving your success in the digital landscape.</p>
+                    </div>
+                    <div class="w-33 mt-3 flex flex-end">
+                        <a href="#contact3" class="btn_hover1">Get Started</a>
+                    </div>
+                    <div class="flex flex-sb">
+                        <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+                            <div class="experience_mask">
+                                <figure>
+                                    <img src="images/discuss.jpg" width="500px"  alt="">
+                                </figure>
+                            </div>
+                            <div class="experience-hr flex gap-1">
+                                <hr>
+                                <h6>Our Expertise</h6>
+                            </div>
+                        
+                    </div>
+                    <div class=" w-50 flex flex-col gap-20 mt-1">
+                        <div class="flex gap-1 ex-card" data-aos="fade-up">
+                            <div class="flex flex-center">
+                                <h5>100</h5>
+                                <h5> %</h5>
+                            </div>
+                            <div>
+                                <h4>Creative Approach</h4>
+                                <p>At our digital marketing company, we believe in a creative approach that transcends traditional methods. We blend innovative strategies with cutting-edge technology to craft personalized marketing campaigns that captivate and engage your target audience. </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex flex-center">
+                                <h5>99</h5>
+                                <h5> %</h5>
+                            </div>
+                            <div>
+                                <h4>Guaranteed Success</h4>
+                                <p>At digitattva solutions, we are dedicated to delivering guaranteed success through our results-driven strategies. By leveraging advanced analytics, targeted campaigns, and a deep understanding of market trends, we ensure your brand achieves measurable growth and increased visibility. </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-1 ex-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="flex flex-center">
+                                <h5>100</h5>
+                                <h5> %</h5>
+                            </div>
+                            <div>
+                                <h4>Brand Strategy</h4>
+                                <p>Through strategic planning, creative content, and data-driven insights, we build a cohesive brand narrative that resonates with your customers and sets you apart from the competition. Our goal is to create a powerful and consistent brand presence that drives long-term success and growth. </p>
+                            </div>
+                        </div>
+                    </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container p-relative">
+                <div class="work-para text-center" data-aos="fade-up">
+                    <h5>
+                        HOW WE WORK?
+                        
+                    </h5>
+                    <h2 class="mt-15">
+                        Our Process for Delivering Results
+                    </h2>
+                    <p class="mt-1">Understanding Your Needs: We start by deeply understanding your business goals, challenges, and target audience to tailor our strategies specifically to your needs.</p>
+                </div>
+                <div class="work-hr flex gap-1">
+                    <hr>
+                    <h6>Project in steps</h6>
+                </div>
+                <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+                    <div data-aos="zoom-in">
+                        <h2>01.</h2>
+                        <h4>Understanding your need</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>02.</h2>
+                        <h4>Stratergic planning</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>03.</h2>
+                        <h4>Excution and optimization</h4>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <h2>04.</h2>
+                        <h4> Ongoing Support</h4>
+                    </div>
+                </div>
+                <div class="flex flex-center" data-aos="zoom-in">
+                <a href="#contact3" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="team" id="team4">
+            <div class="container " >
+                <div class="flex team-center" data-aos="fade-up">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="team-hr1">
+                            <h5>Our Team</h5>
+                        </div>
+                        <h2 class="mt-1">
+                            Meet Our Team of Professionals
+                        </h2>
+                        <!-- <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore est eligendi sint voluptatem tempora suscipit perspiciatis alias aliquid porro nemo commodi, impedit ex excepturi vitae fugit amet fugiat accusantium! Magnam!</p> -->
+                    </div>
+                    <!-- <div class="w-33 mt-15 flex flex-end">
+                 <a href="/" class="btn_hover2">All Members</a>
+                    </div> -->
+                </div>
+                
+                
+                <div class="slider" data-aos="fade-right" data-aos-delay="400">
+
+                    <input type="radio" name="card" id="c-1">
+                    <input type="radio" name="card" id="c-2">
+                    <input type="radio" name="card" id="c-3" checked>
+                    <input type="radio" name="card" id="c-4">
+                    <input type="radio" name="card" id="c-5">
+            
+            
+                    <div class="cards">
+            
+                        <label for="c-1" class="item">
+                            <div class="main_content">
+                                <div class="img">
+                                    <img src="/images/slider/priyanka.jpg" alt="">
+                                </div>
+            
+                                <div class="content">
+                                    <h4>Priyanka Kushwaha </h4>
+                                    <h5>Creative Director</h5>
+                                    <div class="social">
+                                        <!-- <div class="icon"><a href="#"><i class="fa-brands fa-facebook" style="--color: #3b5998"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.instagram.com/_priyanka_0611?igsh=bmRlOHA3dXZvNnQ2"><i class="fa-brands fa-square-instagram" style="--color: #e14664"></i></a></div>
+                                        <!-- <div class="icon"><a href="#"><i class="fa-brands fa-twitter" style="--color: #00acee"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.linkedin.com/in/priyanka-kushwaha-430054268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="--color: #0077b5"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+            
+                        <label for="c-2" class="item">
+                            <div class="main_content">
+                                <div class="img">
+                                    <img src="/images/slider/aayushi.jpg" alt="">
+                                </div>
+            
+                                <div class="content">
+                                    <h4>Aayushiaditi Verma</h4>
+                                    <h5>Founder & COO</h5>
+                                    
+                                    <div class="social">
+                                        <!-- <div class="icon"><a href="#"><i class="fa-brands fa-facebook" style="--color: #3b5998"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.instagram.com/_aduuuuu?igsh=MWI0bjNqOXFnY3EwcA=="><i class="fa-brands fa-square-instagram" style="--color: #e14664"></i></a></div>
+                                        <!-- <div class="icon"><a href="#"><i class="fa-brands fa-twitter" style="--color: #00acee"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.linkedin.com/in/aayushiaditi-verma-906121223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin" style="--color: #0077b5"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+            
+                        <label for="c-3" class="item">
+                            <div class="main_content">
+                                <div class="img">
+                                    <img src="/images/slider/radheya.3jpg.jpg" alt="">
+                                </div>
+            
+                                <div class="content">
+                                    <h4>Radheya Baheti</h4>
+                                    <h5>Founder & CEO</h5>
+                                    
+                                    <div class="social">
+                                        <!-- <div class="icon"><a href="https://www.facebook.com/mohdshams7866?mibextid=ZbWKwL"><i class="fa-brands fa-facebook" style="--color: #3b5998"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.instagram.com/radheya.baheti?igsh=MWp6d21wYWR1NjU4Ng=="><i class="fa-brands fa-square-instagram" style="--color: #e14664"></i></a></div>
+                                    
+                                        <div class="icon"><a href="https://www.linkedin.com/in/radheya-baheti-1731bb22a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="--color: #0077b5"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+            
+                        <label for="c-4" class="item">
+                            <div class="main_content">
+                                <div class="img">
+                                    <img src="/images/slider/shams4.jpg" alt="">
+                                </div>
+            
+                                <div class="content">
+                                    <h4>Shams Mansoori</h4>
+                                    <h5>Cheif Technical Officer</h5>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            
+                                    <div class="social">
+                                        <div class="icon"><a href="https://www.facebook.com/mohdshams7866?mibextid=ZbWKwL"><i class="fa-brands fa-facebook" style="--color: #3b5998"></i></a></div>
+                                        <div class="icon"><a href="https://www.instagram.com/mohd_shams_37?utm_source=qr&igsh=MWVmeDVycGh0NTduaA=="><i class="fa-brands fa-square-instagram" style="--color: #e14664"></i></a></div>
+                                    
+                                        <div class="icon"><a href="https://www.linkedin.com/in/shams-mansuri-44477812a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin" style="--color: #0077b5"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+            
+                        <label for="c-5" class="item">
+                            <div class="main_content">
+                                <div class="img">
+                                    <img src="/images/slider/aniket2.jpg" alt="">
+                                </div>
+            
+                                <div class="content">
+                                    <h4>Aniket Magar</h4>
+                                    <h5>Social Media Head</h5>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            
+                                    <div class="social">
+                                        <!-- <div class="icon"><a href="#"><i class="fa-brands fa-facebook" style="--color: #3b5998"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.instagram.com/aniket_05__?igsh=MWhwc2oycjVldWRsNQ=="><i class="fa-brands fa-square-instagram" style="--color: #e14664"></i></a></div>
+                                        <!-- <div class="icon"><a href="#"><i class="fa-brands fa-twitter" style="--color: #00acee"></i></a></div> -->
+                                        <div class="icon"><a href="https://www.linkedin.com/in/aniket-magar-032571327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="--color: #0077b5"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+            
+                    </div>
+            
+                    <div class="dots">
+                        <label for="c-1"></label>
+                        <label for="c-2"></label>
+                        <label for="c-3"></label>
+                        <label for="c-4"></label>
+                        <label for="c-5"></label>
+                    </div>
+            
+                </div>
+        
+            </div>
+            <div class="team-btn" data-aos="zoom-in">
+                <div class="container flex flex-sb gap-2 flex-wrap">
+                    <h4>Ask A Question To Our Amazing Team,And Get,Responsive Quickly</h4>
+                    <a href="#contact3" class="btn_hover2">Contact Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing p-relative" id="pricing2">
+            <span></span>
+            <div class="pricing-hr flex gap-2 mt-3 ">
+                <hr>
+                <h6>Pricing Plans</h6>
+            </div>
+            <div class="container">
+                <div class="text-center" data-aos="fade-down">
+                    <h5>PRICING</h5>
+                    <h2 class="mt-1">Pricing Plans</h2>
+                    <p class="mt-1 mb-15">Our pricing plans are customizable to fit your needs. You can tailor your plan based on the specific time period you choose, with different pricing options available for each month.</p>
+                </div>
+                <div class="pricing-card flex gap-1 mt-3 text-center">
+                    <div class="flex flex-col gap-1" data-aos="fade-up">
+                        <h3>3 Months</h3>
+                        <!-- <h2></h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6> -->
+                        <a href="#contact3" class="btn_hover1">Get started</a>
+                    </div>
+                    <div class="flex flex-col gap-1" data-aos="fade-down">
+                        <h3>6 Months</h3>
+                        <!-- <h2></h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6> -->
+                        <a href="#contact3" class="btn_hover1">Get started</a>
+                    </div>
+                    <div  class="flex flex-col gap-1 mon11" data-aos="fade-up">
+                        <h3>11 Months</h3>
+                        <h3>+ 1 Month Free</h3></h3>
+                        <!-- <h2></h2>
+                        <h6>SEO Audits</h6>
+                        <h6>SEO Managements</h6>
+                        <h6>Digital Marketing</h6>
+                        <h6>Site Management</h6> -->
+                        <a href="#contact3" class="btn_hover1">Get started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq p-relative" id="faq5">
+            <span></span>
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-50 text-center" data-aos="fade-up">
+                        <div class="flex gap-1">
+                            <hr class="faq-hr1">
+                            <h5>FAQ</h5>
+                        </div>
+                        <h2 class="mt-1">Frequently Asked Questions</h2>
+                        <p class="mt-1">Find answers to common queries about our services, processes, and more. Get insights into how we can help your business grow. Discover our approach to delivering results and what sets us apart. Explore our commitment to quality and customer satisfaction. If you need further assistance, feel free to reach out!
+
+                        </p>
+                    </div>
+                    <div class="w-50 mt-15">
+                        <div class="accordion flex flex-col gap-1" id="accordionExample" data-aos="fade-down">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        HOW DOES DIGITATTVA  HELPS YOU?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>.DIGITATTVA SOLUTIONS HELPS YOU BUILD A STRONG DIGITAL PRESENCE. WE SPECIALIZE IN MARKETING AND WEB DEVELPOMENT, TURNING YOUR VISIONS INTO REALITY. OUR MISSION IS TO EMPOWER YOU TO BUILD YOUR DIGITAL EMPIRE LET'S MAKE YOUR DIGITAL EMPIRE A REALITY.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        WHAT KIND OF DIGITAL SERVICES DO WE PROVIDE?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>WE PROVIDE MARKETING SERVICES INCLUDING DIGITAL MARKETING, AD CAMPAINING, SOCIAL MEDIA MARKETING AND SEO. OUR SERVICES ALSO INCLUDE CONTENT MARKETING WHICH INCLUDE E-MAIL MARKETING, WHATSAPP MARKETING, INFLUNCER MARKETING, GROUND MARKETING.WE ALSO GIVE USP SERVICE WHERE WE PROVIDE GENUINE REVIEWS.WE MAKE PITCH DECK FROM SCRATCH WITH MARKET RESEARCH.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        <!-- WHAT IS YOUR TIMELINE FOR COMPLETING A PROJECT? -->
+                                         WHAT IS YOUR PROJECT TIMELINE
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>Our timeline for completing a project is highly flexible and tailored to your specific needs. We prioritize delivering your work as soon as possible without compromising on quality. By leveraging efficient workflows, experienced professionals, and clear communication, we ensure that your project is completed promptly, often ahead of schedule. We understand the importance of your deadlines and are committed to meeting or exceeding them every time</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button flex-sb">
+                                        WHAT IF I'M NOT SATISFIED WITH THE WORK?
+                                        <img src="images/icon/plus.png" alt="icon">
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse">
+                                    <p>We are dedicated to ensuring your complete satisfaction with our work. If you’re not fully satisfied, we’ll work closely with you to make any necessary adjustments until the results meet your expectations. Our priority is to deliver a product that aligns perfectly with your vision and requirements. Your feedback is invaluable, and we won’t rest until you are completely happy with the final outcome. Customer satisfaction isn’t just a promise—it’s our commitment.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog" id="blog6">
+            <div class="container">
+                <div class="flex blog-center">
+                    <div class="w-66">
+                        <div class="flex gap-1">
+                            <hr class="blog-hr1">
+                            <h5>Blog</h5>
+                        </div>
+                        <h2 class="mt-1">Latest posts</h2>
+                        <p class="mt-1 mb-15">Stay updated with our latest posts! Discover valuable insights, industry trends, and tips to help you succeed. Explore our most recent articles and stay informed with fresh content regularly.
+
+                        </p>
+                    </div>
+                    <div class="w-33 mt-1 flex flex-end">
+                <a href="/" class="btn_hover2">See all blogs</a>
+                    </div>
+                </div>
+                <div class="flex gap-1 mt-15 blog-cards">
+                    <div class="blog-card w-100" data-aos="fade-up">
+                        <img src="images/home/blog1.png" alt="img" class="card-img-top">
+                        <div class="card-body">
+                            <h4>10 Must-Know Digital Marketing Trands In 2024</h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card w-100" data-aos="fade-down">
+                        <img src="images/home/blog2.png" alt="img" class="card-img-top">
+                        <div class="card-body" >
+                            <h4>The Importance of Responsive Web Design For Your Business</h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="blog-card w-100" data-aos="fade-up">
+                        <img src="images/home/blog3.png" alt="img" class="card-img-top">
+                        <div class="card-body">
+                            <h4>How To Create A Successful Social Media Strategy</h4>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="/js/main.js"> </script>
+    </div>
+
+    <footer >
+        <div class="containers">
+           
+            
+                <form action="https://api.web3forms.com/submit" method="post" id="contact3"  data-aos="zoom-in" data-aos-delay="400">
+                    <div id="footer-message"></div>
+
+                    <div>
+                        <h4>Contact Us</h4>
+                    </div>
+                   <div class="glasscontain">
+                     <ul>
+            <li><input type="hidden" name="access_key" value="b4043afe-9563-4dea-ab77-f8324ba203fb"></li>
+                    <li><input type="text"  name="name" required placeholder="Enter your name"></li>
+                    <li><input type="email"  name="email" required placeholder="Enter your mail" ></li>
+                 <li><input type="text" name="Service" required placeholder=" What Kind Of Service Do You Want?"></li>
+                    <li><input type="number" name="Contact no" required placeholder="Enter Contact Number"></li>
+                    <li> <textarea name="message" class="inputt" required placeholder="Message"></textarea>
+                    </li>
+                </ul>
+                <button id="dismiss-popup-btn" type="submit" value="Send" >Submit</button>
+                </form>
+            
+
+            </div>
+        
+        <div class="footer-menu">
+            <div class="container">
+                <div class="flex flex-start footer-center">
+                    <div class="w-33 flex flex-col gap-2 flex-start">
+                        <a href="/"><img src="/img/logofinal11.svg" height="100px " width="300px" alt="footer-logo"></a>
+                        <p>Digitattva Solutions helps you build a strong digital presence. We specialize in marketing and web development, turning your vision into reality. Our mission: empower you to build your digital empire. Let’s make your digital empire a reality.</p>
+                  <span class="flex gap-20">
+          <a href="https://www.facebook.com/profile.php?id=61565126407016"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/digitattvasolutions_?igsh=ZXRhdDEyZzltcWpt"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919421819663"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/company/digitattva-solutions/"><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                    <div class="w-16 mt-1">
+                        <h4>Quick Links</h4>
+                        <ul class="flex flex-col gap-20 flex-start">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about2">About Us</a></li>
+                            <!-- <li><a href="#portfolio3">Portfolio</a></li> -->
+                            <li><a href="#service3">Services</a></li>
+                            <li><a href="#blog6">Blog</a></li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="w-16 mt-45 flex-end">
+                        <ul class="flex flex-col gap-20 flex-start">
+                            <li><a href="/career.html">Career</a></li>
+                            <li><a href="#faq5">FAQ</a></li>
+                            <li><a href="#contact3">Contact Us</a></li>
+                            <li><a href="#team4">Team</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+           
+                    </div>
+                    <div class="w-33 mt-1 flex flex-col flex-start">
+                        <h4>Get Connected</h4>
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li>
+                                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                                <a href="#" class="text-lowercase">digitattvasolution@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#" >+91-9421819663</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-sharp fa-regular fa-clock"></i></a>
+                                <a href="#" ">Office Hours:8Am-11PM  Sunday-Weekend Day
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container flex flex-sb gap-20 flex-wrap">
+                <h6>copyright &copy; 2024  <a href="/" class="p-0">Digitattva Solution</a></h6>
+                <h6>Coded By<b>Shams Mansoori</b></h6>
+            </div>
+        </div>
+    </footer>
+   
+        <!-- <div class="container">
+            <div class ="footer-hr flex flex-col">
+                <div class="flex gap-1" data-aos="fade-left">
+                    <hr>
+                    <h6>News letter</h6>
+                </div>
+                <h3>JOIN OUR MAILING LIST</h3>
+                <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur ab error quos tempora enim, dignissimos quia ullam, quas, sapiente nemo iusto non unde numquam excepturi sequi? Pariatur id eaque ipsam?</p>
+            </div>
+            <form action="#" id="footer-form" class="flex flex-sb gap-2" data-aos="zoom-in" data-aos-delay="400">
+                <div id="footer-message"></div>
+ <input type="email" required placeholder="Enter your mail" >
+  <button type="submit" class="btn_hover1">Get Started</button>
+   </form>
+        </div>
+        <div class="footer-menu">
+            <div class="container">
+                <div class="flex flex-start footer-center">
+                    <div class="w-33 flex flex-col gap-2 flex-start">
+                        <a href="/"><img src="images/logo26-removebg-preview.png" height="100px " width="300px" alt="footer-logo"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim molestias nesciunt laborum fugiat tempore voluptate quia eum. Dolor molestias tempora pariatur exercitationem officia, cumque aliquid eius quidem odio cupiditate repellat.</p>
+                  <span class="flex gap-20">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </span>
+                    </div>
+                    <div class="w-16 mt-1">
+                        <h4>Quick Links</h4>
+                        <ul class="flex flex-col gap-20 flex-start">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about2">About Us</a></li>
+                            <li><a href="#portfolio3">Portfolio</a></li>
+                            <li><a href="#blog6">Blog</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="w-16 mt-45 flex-end">
+                        <ul class="flex flex-col gap-20 flex-start">
+                            <li><a href="#faq5">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#team4">Team</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+           
+                    </div>
+                    <div class="w-33 mt-1 flex flex-col flex-start">
+                        <h4>Get Connected</h4>
+                        <ul class="flex flex-col gap-2 flex-start">
+                            <li>
+                                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                                <a href="#" class="text-lowercase">Yourname@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                            <a href="#" >+91-234-3432432</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-sharp fa-regular fa-clock"></i></a>
+                                <a href="#" ">Office Hours:8Am-11PM  Sunday-Weekend Day
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container flex flex-sb gap-20 flex-wrap">
+                <h6>copyright &copy; 2024  <a href="/" class="p-0">Digitattva Solution</a></h6>
+                <h6>Coded y <b>Shams Mansoori</b></h6>
+            </div>
+        </div>
+    </footer>  -->
+
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover1"><i class="fa-solid fa-arrow-turn-up"></i></button>
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js"> </script>
+
+
+
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display= "none";
+    })
+</script>
+
+
+
+
+    <!-- <script
+    src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"
+    ></script> -->
+
+
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+
+    VanillaTilt.init(document.querySelector("footer form")),{
+        max:25,
+        speed:400
+    }
+</script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1250,
+            once: true,
+        });
+    </script>
+
+    <!-- jquery js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- jquery min js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel min js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        integrity="sha256-DHF4zGyjT7GOMPBwpeehwoey18z8uiz98G4PRu2lV0A=" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
